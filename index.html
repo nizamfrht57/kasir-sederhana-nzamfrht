@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kasir Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>💲 Kasir Cepat</h1>
+            <p>Aplikasi Kasir Sederhana</p>
+        </header>
+
+        <div class="input-section">
+            <h2>Tambah Item</h2>
+            <input type="text" id="itemName" placeholder="Nama Item" required>
+            <input type="number" id="itemPrice" placeholder="Harga Satuan (Rp)" min="1" required>
+            <input type="number" id="itemQuantity" placeholder="Jumlah" value="1" min="1" required>
+            <button id="addItemBtn" class="btn-primary">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="cart-section">
+            <h2>🛒 Keranjang Belanja</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Subtotal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="summary-section">
+            <h2>Ringkasan</h2>
+            <p>Subtotal: <span id="subtotal">Rp 0</span></p>
+
+            <div class="discount-group">
+                <label for="discountRate">Diskon (%):</label>
+                <input type="number" id="discountRate" value="0" min="0" max="100">
+                <p>Potongan Diskon: <span id="discountAmount">Rp 0</span></p>
+            </div>
+
+            <h3 class="grand-total">TOTAL: <span id="grandTotal">Rp 0</span></h3>
+            
+            <button id="checkoutBtn" class="btn-success">Bayar & Cetak Struk</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

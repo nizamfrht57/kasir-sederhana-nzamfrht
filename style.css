@@ -1,0 +1,151 @@
+/* FONT DAN RESET DASAR */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6; /* Warna latar belakang lembut */
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTAINER UTAMA */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #007bff; /* Garis pemisah biru */
+}
+
+.header h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+/* INPUT SECTION */
+.input-section, .summary-section, .cart-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #e9f5ff; /* Latar belakang untuk input */
+}
+
+.input-section input[type="text"], 
+.input-section input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+/* BUTTONS */
+.btn-primary, .btn-danger, .btn-success {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+/* TABLE KERANJANG */
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#cartTable th, #cartTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#cartTable thead {
+    background-color: #f1f1f1;
+}
+
+#cartTable tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* SUMMARY SECTION */
+.summary-section h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.summary-section p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.discount-group {
+    padding: 10px 0;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    margin: 10px 0;
+}
+
+.discount-group input {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.grand-total {
+    font-size: 1.8em;
+    color: #28a745; /* Warna hijau untuk total akhir */
+    margin-top: 20px;
+    text-align: right;
+}
